@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App.sidebar-open {
+  position: relative;
+  min-height: 100vh; /* Gunakan min-height agar elemen mengisi seluruh tinggi viewport */
+  min-width: 100%;
+  left: 88px;
+  background: var(--body-color);
+  transition: var(--tran-04);
+}
+
+.App.sidebar-closed {
+  position: relative;
+  min-height: 100vh; 
+  min-width: 100%; 
+  left: 265px;
+  background: var(--body-color);
+  transition: var(--tran-04);
+}
+
+.App.dark {
+  background: var(--DarkMode-color);
+  color: white;
+  min-height: 100vh; 
+  min-width: 100%; 
+  transition: var(--tran-04);
+}
+
+:root {
+  --body-color: #ff7f3e;
+  --sidebar-color: #FF7F3E;
+  --primary-color: #8D493A;
+  --primary-color-light: #8D493A;
+  --toggle-color: #ddd;
+  --text-color: #fff;
+  --DarkMode-color: #18191a;
+
+  /* ==== Transition ==== */
+
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body {
+  height: 100vh;
+  transition: var(--tran-02);
+  font-weight: 400;
+  position: relative;
+  background-color: #FF7F3E;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+
+@media (max-width: 820px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 94%;
+    margin-left: 0.5rem;
+  }
+}

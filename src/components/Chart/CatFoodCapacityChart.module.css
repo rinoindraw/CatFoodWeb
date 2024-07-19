@@ -1,0 +1,121 @@
+.chartSection {
+  background-image: url("../../assets/catwall.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* untuk berada ditengah*/
+  min-height: 80vh;
+}
+
+.imgChartFlex {
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 50px 0;
+}
+
+.chartContainer {
+  width: 300px; /* Sesuaikan dengan ukuran yang diinginkan */
+  height: 300px; /* Sesuaikan dengan ukuran yang diinginkan */
+  margin-left: 50px;
+  /* Agar chart berada di tengah */
+  /* margin: auto; */
+}
+
+/* img {
+  width: 350px;
+} */
+
+.chartBox {
+  padding: 2rem;
+  padding-left: 200px;
+  padding-right: 200px;
+  /* width: 1200px; */
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 20px 35px #ff7f3e;
+  -moz-box-shadow: 1px 20px 35px #ff7f3e;
+  box-shadow: 1px 10px 35px #ff7f3e;
+  background-color: rgba(255, 240, 230, 0.7);
+  text-align: center;
+}
+
+.chartBox h2 {
+  font-size: 26px;
+}
+
+.redText {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.greenText {
+  color: green;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.redTextMessage {
+  color: red;
+  font-size: 22px;
+}
+
+.greenTextMessage {
+  color: green;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1000px) {
+  .imgChartFlex img {
+    display: none;
+  }
+
+  .chartContainer {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0); /* transparan */
+  }
+
+  .chartBox {
+    padding: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* width: 1200px; */
+    /* border-radius: 30px; */
+    -webkit-box-shadow: 1px 20px 35px #ff7f3e;
+    -moz-box-shadow: 1px 20px 35px #ff7f3e;
+    box-shadow: 1px 10px 35px #ff7f3e;
+    background-color: rgba(255, 240, 230, 0.7);
+    text-align: center;
+  }
+
+  .chartSection {
+    background-image: none;
+    /* background-color: #ff7f3e; */
+    /* min-height: auto; */
+  }
+
+  .redText {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .greenText {
+    color: green;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .chartBox h2 {
+    font-size: 24px;
+  }
+}
