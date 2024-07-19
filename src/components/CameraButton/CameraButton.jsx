@@ -4,11 +4,11 @@ import styles from "./CameraButton.module.css";
 
 const CameraButton = () => {
     const handleRedirect = () => {
-        window.open('http://192.168.202.131', '_blank');
+        window.open('http://192.168.202.131/', '_blank');
       };
 
   return (
-    <section>
+    <section className={styles.cameraSection}>
       <div className={styles.wrapper}>
         <h2>Untuk Mengawasi Mpus Klik Tombol Di Bawah</h2>
         <div className={styles.cameraContainer}>

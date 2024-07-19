@@ -4,6 +4,7 @@ import "./App.css";
 import SideBar from "./components/SideBar/SideBar";
 import Camera from "./components/CameraButton/CameraButton";
 import CatCapacityChart from "./components/Chart/CatFoodCapacityChart";
+import LineChart from "./components/LineChart/LineChart";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/trashbin2" element={<TrashBinTwo />} />
           <Route path="/trashbin3" element={<TrashBinThree />} /> */}
           <Route path="/camera" element={<Camera/>} />
+          <Route path="/line" element={<LineChart/>} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

@@ -7,6 +7,7 @@ import { BsPersonFill, BsFillTrash2Fill } from "react-icons/bs";
 import { MdBarChart } from "react-icons/md";
 import guandangImg from '../../assets/guandang.png'
 import { FaCat, FaCameraRetro } from "react-icons/fa";
+import { FaChartLine } from "react-icons/fa6";
 
 const SideBar = ({
   darkMode,
@@ -52,6 +53,11 @@ const SideBar = ({
               icon={<FaCat className={styles.icon} />}
               text={"Dashboard"}
               to={"/"}
+            />
+            <SidebarLink
+              icon={<FaChartLine className={styles.icon} />}
+              text={"Line Chart"}
+              to={"/line"}
             />
             <SidebarLink
               icon={<FaCameraRetro className={styles.icon} />}
