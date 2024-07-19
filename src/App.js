@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate  } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/SideBar/SideBar";
-import Camera from "./components/Camera/Camera";
+import Camera from "./components/CameraButton/CameraButton";
 import CatCapacityChart from "./components/Chart/CatFoodCapacityChart";
 
 
